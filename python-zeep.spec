@@ -4,13 +4,12 @@
 #
 Name     : python-zeep
 Version  : 2.5.0
-Release  : 4
+Release  : 5
 URL      : https://github.com/mvantellingen/python-zeep/archive/2.5.0.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/2.5.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause MIT
-Requires: python-zeep-legacypython
 Requires: python-zeep-python3
 Requires: python-zeep-python
 Requires: appdirs
@@ -48,15 +47,6 @@ Zeep: Python SOAP client
 ========================
 A fast and modern Python SOAP client
 
-%package legacypython
-Summary: legacypython components for the python-zeep package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the python-zeep package.
-
-
 %package python
 Summary: python components for the python-zeep package.
 Group: Default
@@ -83,25 +73,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523041271
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523300289
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1523041271
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
