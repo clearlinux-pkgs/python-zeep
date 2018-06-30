@@ -4,7 +4,7 @@
 #
 Name     : python-zeep
 Version  : 2.5.0
-Release  : 8
+Release  : 9
 URL      : https://github.com/mvantellingen/python-zeep/archive/2.5.0.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/2.5.0.tar.gz
 Summary  : No detailed summary available
