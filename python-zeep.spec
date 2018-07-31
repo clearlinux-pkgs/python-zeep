@@ -4,7 +4,7 @@
 #
 Name     : python-zeep
 Version  : 3.1.0
-Release  : 15
+Release  : 16
 URL      : https://github.com/mvantellingen/python-zeep/archive/3.1.0.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/3.1.0.tar.gz
 Summary  : No detailed summary available
@@ -21,8 +21,8 @@ Requires: isodate
 Requires: lxml
 Requires: pytz
 Requires: requests
+Requires: requests-toolbelt
 Requires: six
-Requires: toolbelt
 BuildRequires : appdirs
 BuildRequires : attrs
 BuildRequires : buildreq-distutils3
@@ -35,8 +35,8 @@ BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : pytz
 BuildRequires : requests
+BuildRequires : requests-toolbelt-python
 BuildRequires : six
-BuildRequires : toolbelt-python
 BuildRequires : tox
 BuildRequires : virtualenv
 
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533050339
+export SOURCE_DATE_EPOCH=1533057287
 python3 setup.py build -b py3
 
 %install
