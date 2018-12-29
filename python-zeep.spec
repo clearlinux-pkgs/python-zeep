@@ -4,7 +4,7 @@
 #
 Name     : python-zeep
 Version  : 3.2.0
-Release  : 18
+Release  : 19
 URL      : https://github.com/mvantellingen/python-zeep/archive/3.2.0.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/3.2.0.tar.gz
 Summary  : No detailed summary available
