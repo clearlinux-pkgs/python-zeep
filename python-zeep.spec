@@ -4,7 +4,7 @@
 #
 Name     : python-zeep
 Version  : 3.3.1
-Release  : 21
+Release  : 22
 URL      : https://github.com/mvantellingen/python-zeep/archive/3.3.1.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/3.3.1.tar.gz
 Summary  : No detailed summary available
