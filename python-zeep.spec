@@ -4,7 +4,7 @@
 #
 Name     : python-zeep
 Version  : 4.1.0
-Release  : 45
+Release  : 46
 URL      : https://github.com/mvantellingen/python-zeep/archive/4.1.0/python-zeep-4.1.0.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/4.1.0/python-zeep-4.1.0.tar.gz
 Summary  : A modern/fast Python SOAP client based on lxml / requests
@@ -17,13 +17,13 @@ Requires: pypi(requests_file)
 Requires: pypi(requests_toolbelt)
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(py)
+BuildRequires : pypi(requests_toolbelt)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(wheel)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
 BuildRequires : pypi-virtualenv
-BuildRequires : requests-toolbelt-python
 
 %description
 ========================
@@ -77,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641936858
+export SOURCE_DATE_EPOCH=1649702325
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
