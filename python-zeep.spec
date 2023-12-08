@@ -7,7 +7,7 @@
 #
 Name     : python-zeep
 Version  : 4.2.1
-Release  : 51
+Release  : 52
 URL      : https://github.com/mvantellingen/python-zeep/archive/4.2.1/python-zeep-4.2.1.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/4.2.1/python-zeep-4.2.1.tar.gz
 Summary  : No detailed summary available
@@ -58,6 +58,17 @@ python components for the python-zeep package.
 Summary: python3 components for the python-zeep package.
 Group: Default
 Requires: python3-core
+Provides: pypi(python_zeep)
+Requires: pypi(appdirs)
+Requires: pypi(attrs)
+Requires: pypi(cached_property)
+Requires: pypi(defusedxml)
+Requires: pypi(isodate)
+Requires: pypi(lxml)
+Requires: pypi(pytz)
+Requires: pypi(requests)
+Requires: pypi(requests_toolbelt)
+Requires: pypi(six)
 
 %description python3
 python3 components for the python-zeep package.
