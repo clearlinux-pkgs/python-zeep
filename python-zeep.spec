@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : python-zeep
-Version  : 4.3.0
-Release  : 53
-URL      : https://github.com/mvantellingen/python-zeep/archive/4.3.0/python-zeep-4.3.0.tar.gz
-Source0  : https://github.com/mvantellingen/python-zeep/archive/4.3.0/python-zeep-4.3.0.tar.gz
+Version  : 4.3.1
+Release  : 54
+URL      : https://github.com/mvantellingen/python-zeep/archive/4.3.1/python-zeep-4.3.1.tar.gz
+Source0  : https://github.com/mvantellingen/python-zeep/archive/4.3.1/python-zeep-4.3.1.tar.gz
 Summary  : A modern/fast Python SOAP client based on lxml / requests
 Group    : Development/Tools
 License  : BSD-3-Clause MIT
@@ -76,10 +76,10 @@ python3 components for the python-zeep package.
 
 
 %prep
-%setup -q -n python-zeep-4.3.0
-cd %{_builddir}/python-zeep-4.3.0
+%setup -q -n python-zeep-4.3.1
+cd %{_builddir}/python-zeep-4.3.1
 pushd ..
-cp -a python-zeep-4.3.0 buildavx2
+cp -a python-zeep-4.3.1 buildavx2
 popd
 
 %build
@@ -87,7 +87,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1728918151
+export SOURCE_DATE_EPOCH=1729088556
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
