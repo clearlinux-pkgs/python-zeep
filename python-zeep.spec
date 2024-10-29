@@ -7,7 +7,7 @@
 #
 Name     : python-zeep
 Version  : 4.3.1
-Release  : 54
+Release  : 55
 URL      : https://github.com/mvantellingen/python-zeep/archive/4.3.1/python-zeep-4.3.1.tar.gz
 Source0  : https://github.com/mvantellingen/python-zeep/archive/4.3.1/python-zeep-4.3.1.tar.gz
 Summary  : A modern/fast Python SOAP client based on lxml / requests
